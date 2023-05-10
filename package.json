@@ -1,0 +1,79 @@
+{
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.8",
+    "babel-preset-gatsby": "^2.10.1",
+    "http-proxy-middleware": "^2.0.4",
+    "micro": "^9.3.4"
+  },
+  "description": "Makes BigCommerce API data available in GatsbyJS sites.",
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "babel-jest": "^27.5.1",
+    "babel-preset-gatsby-package": "^2.10.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.0",
+    "react": "^18.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "commit": "cz"
+    }
+  },
+  "jest": {
+    "collectCoverage": true
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-source-bigcommerce",
+    "@epic-design-labs",
+    "plugin",
+    "source",
+    "bigcommerce",
+    "api"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "yarn lint",
+      "yarn format"
+    ]
+  },
+  "main": "index.js",
+  "name": "@galatea-usa/gatsby-source-bigcommerce",
+  "peerDependencies": {
+    "gatsby": ">2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galatea-usa/gatsby-source-bigcommerce.git"
+  },
+  "scripts": {
+    "build": "babel src --out-dir ./ --source-maps",
+    "format": "prettier --write '**/*.{js,jsx}'",
+    "lint": "eslint --ext '**/*.{js,jsx}' --cache --color",
+    "prepare": "husky install",
+    "test": "jest --color",
+    "watch": "babel src --out-dir ./ --source-maps --watch"
+  },
+  "version": "1.1.1"
+}
