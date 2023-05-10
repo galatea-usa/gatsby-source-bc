@@ -8,7 +8,7 @@
     "@babel/runtime": "^7.17.8",
     "babel-preset-gatsby": "^2.10.1",
     "http-proxy-middleware": "^2.0.4",
-    "micro": "^9.3.4"
+    "micro": "^10.0.1"
   },
   "description": "BC API data available in sites.",
   "devDependencies": {
