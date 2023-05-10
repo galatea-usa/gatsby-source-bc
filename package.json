@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.17.8",
-    "babel-preset-gatsby": "^2.10.1",
+    "babel-preset-gatsby": "^3.9.0",
     "http-proxy-middleware": "^2.0.4",
     "micro": "^9.3.4"
   },
