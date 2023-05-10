@@ -1,9 +1,3 @@
-# @epicdesignlabs/gatsby-source-bigcommerce
-
-This official source plugin makes BigCommerce API data available in GatsbyJS sites. Currently in active development.
-
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 ## Features
 
 - Support for both `v2` and `v3` BigCommerce API versions
@@ -13,13 +7,13 @@ This official source plugin makes BigCommerce API data available in GatsbyJS sit
 For `npm`:
 
 ```console
-npm install @epicdesignlabs/gatsby-source-bigcommerce
+npm install @edl/gatsby-source-bigcommerce
 ```
 
 For `yarn`:
 
 ```console
-yarn add @epicdesignlabs/gatsby-source-bigcommerce
+yarn add @edl/gatsby-source-bigcommerce
 ```
 
 Setup this plugin in `gatsby-config.js` as follows:
@@ -28,7 +22,7 @@ Setup this plugin in `gatsby-config.js` as follows:
 module.exports = {
 	plugins: [
 		{
-			resolve: "@epicdesignlabs/gatsby-source-bigcommerce",
+			resolve: "@edl/gatsby-source-bigcommerce",
 			options: {
 				clientId: process.env.BIGCOMMERCE_API_CLIENT_ID,
 				secret: process.env.BIGCOMMERCE_API_SECRET,
@@ -126,21 +120,3 @@ you can query the data as follows:
 ## GraphQL
 
 - You can access the GraphQL Playground by visiting `localhost:8000/__graphql`, assuming you already run your `gatsby` site.
-
-## Work in Progress
-
-- [ ] Add support for [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/)
-- [ ] Add support for optional verbose logging
-- [ ] Enhanced `preview` mode support (Netlify, Vercel, Gatsby Cloud, etc.)
-
-## Author
-
-[**Epic Design Labs**](https://epicdesignlabs.com)
-
-## License
-
-Released under the [MIT license](LICENSE).
-
-## Credits
-
-Thanks to all the contributors of the original plugin [gatsby-source-bigcommerce](https://github.com/thirdandgrove/gatsby-source-bigcommerce) for the great work. 🎉

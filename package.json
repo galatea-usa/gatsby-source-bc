@@ -10,7 +10,7 @@
     "http-proxy-middleware": "^2.0.4",
     "micro": "^9.3.4"
   },
-  "description": "Makes BigCommerce API data available in GatsbyJS sites.",
+  "description": "BC API data available in sites.",
   "devDependencies": {
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.12",
