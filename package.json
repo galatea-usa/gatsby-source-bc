@@ -16,7 +16,7 @@
     "@babel/core": "^7.16.12",
     "@babel/eslint-parser": "^7.16.5",
     "@babel/plugin-transform-runtime": "^7.17.0",
-    "babel-jest": "^27.5.1",
+    "babel-jest": "^29.6.1",
     "babel-preset-gatsby-package": "^2.10.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
